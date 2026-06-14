@@ -297,5 +297,55 @@ Concepts Used
 - String Formatting
 - Basic Data Processing
 
+# Assignment 6 - Exception Handling
+
+## Task 1: Safe Division Utility
+- Took numerator and denominator as user input.
+- Used `try-except` to handle:
+  - `ValueError` for invalid numeric input.
+  - `ZeroDivisionError` when denominator is 0.
+- Printed result inside the `else` block when no error occurred.
+- Used `finally` block to print:
+  - `Operation Complete`
+
+## Task 2: Bill Calculator with Error Handling
+- Processed a list of product prices.
+- Added only valid positive numeric values to the total.
+- Handled:
+  - `TypeError` for non-numeric values.
+  - Custom `ValueError("Negative price not allowed")` for negative prices.
+- Printed running total after processing valid values.
+- Skipped invalid entries and continued execution.
+
+## Task 3: Custom Exception - Age Validator
+- Created `check_age(age)` function.
+- Raised:
+  - `ValueError("Age must be between 1 and 120")`
+    when age was outside the valid range.
+- Took age input from the user.
+- Used `try-except` to catch and display the custom exception message.
+
+## Task 4: File Reader with Exception Handling
+- Took filename input from the user.
+- Attempted to open and read the file.
+- Handled:
+  - `FileNotFoundError`
+  - `PermissionError`
+- Printed the first three lines of the file if successful.
+- Used `finally` block to print:
+  - `File operation attempted`
+
+## Task 5: Safe Shopping Cart
+- Created a shopping cart list.
+- Accepted prices from the user until `q` was entered.
+- Converted input values to float.
+- Handled:
+  - `ValueError` for invalid inputs.
+  - Custom exception for negative prices.
+- Stored only valid positive prices.
+- Printed:
+  - Total Items
+  - Total Bill
+  
 ### Author
 Nipun Bhardwaj
